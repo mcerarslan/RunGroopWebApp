@@ -26,7 +26,7 @@ namespace RunGroopWebApp.Controllers
                     UserName = user.UserName,
                     Pace = user.Pace,
                     Mileage = user.Mileage,
-
+                    ProfileImageUrl = user.ProfileImageUrl,
                 };
                 result.Add(userVM);
             }
@@ -41,6 +41,7 @@ namespace RunGroopWebApp.Controllers
                 UserName = user.UserName,
                 Pace = user.Pace,
                 Mileage = user.Mileage,
+                ProfileImageUrl = user.ProfileImageUrl,
             };
             return View(userDetailVM);
         }
